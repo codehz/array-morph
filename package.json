@@ -1,0 +1,13 @@
+{
+  "name": "array-morph",
+  "module": "index.js",
+  "type": "module",
+  "devDependencies": {},
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/node": "^20.8.10",
+    "fast-array-diff": "^1.1.0"
+  }
+}
