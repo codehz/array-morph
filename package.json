@@ -1,5 +1,15 @@
 {
   "name": "array-morph",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codehz/array-morph"
+  },
+  "author": {
+    "name": "CodeHz",
+    "email": "git@hertz.moe"
+  },
+  "license": "MIT",
   "module": "index.js",
   "type": "module",
   "devDependencies": {},
