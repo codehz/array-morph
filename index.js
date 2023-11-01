@@ -520,8 +520,8 @@ class ArrayMorph {
       }
     }
   }
-  update(value) {
-    this.#patch = import_fast_array_diff.getPatch(this.#current, value);
+  update(value, compareFn = (a, b) => a === b) {
+    this.#patch = import_fast_array_diff.getPatch(this.#current, value, compareFn);
   }
   next() {
     if (this.#patch.length === 0) {

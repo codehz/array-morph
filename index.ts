@@ -53,8 +53,8 @@ export default class ArrayMorph<T> implements Iterator<T[]>, Iterable<T[]> {
     }
   }
 
-  update(value: T[]) {
-    this.#patch = getPatch(this.#current, value);
+  update(value: T[], compareFn: (a: T, b: T) => boolean = (a, b) => a === b) {
+    this.#patch = getPatch(this.#current, value, compareFn);
   }
 
   next(): IteratorResult<T[], any> {
